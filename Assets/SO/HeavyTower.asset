@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbc98d3f84ad0438e807be03b7b26247, type: 3}
-  m_Name: Tower_1
+  m_Name: HeavyTower
   m_EditorClassIdentifier: 
-  TowerName: Basic Tower
-  cost: 50
-  health: 50
-  attackCooldown: 0.5
-  color: {r: 1, g: 0, b: 0, a: 1}
-  sprite: {fileID: 21300000, guid: a522a8fbc90a54308b398a7b537c4f20, type: 3}
-  attackRange: 50
+  TowerName: Heavy Tower
+  cost: 75
+  health: 100
+  attackCooldown: 5
+  color: {r: 0.68414766, g: 0.8490566, b: 0.40450338, a: 1}
+  sprite: {fileID: 21300000, guid: 811a50df17e21436cae8fcdd4dc70948, type: 3}
+  attackRange: 25
