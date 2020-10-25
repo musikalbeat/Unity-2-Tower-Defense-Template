@@ -1,0 +1,16 @@
+Scriptable Objects
+
+---
+
+What are they?
+• Recall inheritance
+• Scriptable Objects are similar in that they hold values that get passed down to other objects. However, these feel more like templates that can be filled out with different values.
+
+---
+
+Why use them?
+• Easy to describe what code is shared
+• Customizable
+• Useful for creating slightly different variants of the same template
+• Allow objects to be plugged and played
+• Any changes made while playing the game carries over
