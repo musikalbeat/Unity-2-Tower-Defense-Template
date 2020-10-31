@@ -22,7 +22,7 @@ public class ProjectileManager : MonoBehaviour
     {
         if (target != null)
         {
-            this.transform.position = Vector3.MoveTowards(this.transform.position, transform.position, self.speed * Time.deltaTime);
+            this.transform.position = Vector3.MoveTowards(this.transform.position, target.transform.position, self.speed * Time.deltaTime);
         }
         else
         {
