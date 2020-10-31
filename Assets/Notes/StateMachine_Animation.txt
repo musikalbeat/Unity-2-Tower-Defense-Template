@@ -1,0 +1,14 @@
+State Machines (FSM - Finite State Machines)
+
+---
+
+What are they?
+• Computational patterns that are used to define the model state behavior of a system.
+• They are built of afinite number of states (think of this as the behavior of the machine at a certain point) with some transitions between them when certain conditions are met.
+• Because they are aware of both the internal and external world, they become very flexible to player actions.
+• We will be mostly using deterministic versions which allows you to change states with a certain degree of randomness.
+• Why?
+	- Let's us specify the general structure of behavior (like Scriptable 	  Objects, these are blueprints for doing actions)
+	- Allows us to visually see how different states connect to each other
+	- Very useful for creating complex AI with simple behavior
+---
