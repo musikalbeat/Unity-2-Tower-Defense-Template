@@ -85181,7 +85181,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 9b7493caf959940ba886ea45c3c7ddd7, type: 3}
   m_Color: {r: 0.63995624, g: 0.10933607, b: 0.8584906, a: 1}
   m_FlipX: 0
@@ -85243,7 +85243,7 @@ MonoBehaviour:
   towerTemplate: {fileID: 177289955711521778, guid: 4f84e9de026684e9baf70b07ed889a75,
     type: 3}
   health: 1000
-  resources: 100
+  resources: 500
   currentTower: 0
   towerListManager: {fileID: 553117861}
 --- !u!1 &1395502952

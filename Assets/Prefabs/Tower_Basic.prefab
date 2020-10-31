@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 177289955711521783}
   - component: {fileID: 177289955711521782}
   m_Layer: 0
-  m_Name: Tower
+  m_Name: Tower_Basic
   m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,6 +48,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -95,9 +96,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7faa2d4294ad432fb89f800ebbebe16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  self: {fileID: 0}
   anim: {fileID: 0}
   currentHealth: 0
   currentTarget: {fileID: 0}
+  projectile: {fileID: 4402442142457158281, guid: c2712415c85ca5a488cb7e5970e4465f,
+    type: 3}
 --- !u!60 &177289955711521782
 PolygonCollider2D:
   m_ObjectHideFlags: 0

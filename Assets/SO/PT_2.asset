@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PT_2
   m_EditorClassIdentifier: 
   damage: 20
-  speed: 3
-  size: 6
+  speed: 6
+  size: 4
   color: {r: 1, g: 0.77581686, b: 0.3066038, a: 1}
   sprite: {fileID: 21300000, guid: 9b7493caf959940ba886ea45c3c7ddd7, type: 3}
