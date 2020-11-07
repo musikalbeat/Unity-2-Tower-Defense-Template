@@ -11,6 +11,7 @@ public class TowerType : ScriptableObject
     public float attackCooldown;
     public Color color = Color.gray;
     public Sprite sprite;
+    public float attackRate;
     public float attackRange;
     public ProjectileType projectile;
 }

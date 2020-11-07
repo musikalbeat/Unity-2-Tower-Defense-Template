@@ -30,7 +30,8 @@ public class TowerManager : MonoBehaviour
     {
         if (currentTarget != null)
         {
-            AttackTarget();
+            //AttackTarget();
+            anim.SetFloat("rangeToTarget", Vector3.Distance(this.transform.position, currentTarget.transform.position));
         }
         else
         {
@@ -70,10 +71,13 @@ public class TowerManager : MonoBehaviour
         }
         if(anim != null)
         {
+            // Transition to Firing if true
             if (currentTarget != null)
             {
+                anim.SetFloat("rangeToTarget", Vector3.Distance(this.transform.position, currentTarget.transform.position));
                 anim.SetBool("hasTarget", true);
             }
+            // Transition to Idle if true
             else
             {
                 anim.SetBool("hasTarget", false);
@@ -94,7 +98,7 @@ public class TowerManager : MonoBehaviour
         return rot;
     }
 
-    void AttackTarget()
+    public void AttackTarget()
     {
         // Draws a line from attacking tower to its target
         Debug.DrawLine(this.transform.position, currentTarget.transform.position);
@@ -116,6 +120,7 @@ public class TowerManager : MonoBehaviour
     IEnumerator FireProjectile(Quaternion direction)
     {
         GameObject shotProjectile = CreateProjectile();
+        shotProjectile.transform.parent = this.transform.parent;
         shotProjectile.GetComponent<ProjectileManager>().self = self.projectile;
         shotProjectile.GetComponent<ProjectileManager>().target = currentTarget;
         readyToFire = false;
