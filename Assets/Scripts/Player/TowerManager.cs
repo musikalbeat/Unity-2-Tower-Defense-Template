@@ -96,6 +96,7 @@ public class TowerManager : MonoBehaviour
 
     void AttackTarget()
     {
+        // Draws a line from attacking tower to its target
         Debug.DrawLine(this.transform.position, currentTarget.transform.position);
         if (readyToFire && GetDis() <= self.attackRange)
         {
